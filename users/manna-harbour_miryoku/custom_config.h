@@ -5,3 +5,32 @@
 
 #pragma once
 
+// #define TAPPING_TERM 200
+// #define TAPPING_TERM_PER_KEY
+// uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+//     switch (keycode) {
+//         case LGUI_T(KC_A):
+//         case LGUI_T(KC_O):
+//             return TAPPING_TERM + 20;
+//         default:
+//             return TAPPING_TERM;
+//     }
+// }
+
+#define PERMISSIVE_HOLD
+
+// #define PERMISSIVE_HOLD_PER_KEY
+// bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
+//     switch (keycode) {
+//         case LALT_T(KC_R):
+//         case LALT_T(KC_I):
+//         case LSFT_T(KC_T):
+//         case LSFT_T(KC_N):
+//             return true;
+//         default:
+//             // Do not select the hold action when another key is tapped.
+//             return false;
+//     }
+// }
+
+#define BILATERAL_COMBINATIONS
